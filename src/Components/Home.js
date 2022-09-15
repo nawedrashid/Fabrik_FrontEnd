@@ -27,7 +27,7 @@ const Home = () => {
       form.append("dfile", GLBfile);
       const response = await axios({
         method: "post",
-        url: 'http://localhost:5000/threeFile/upload',
+        url: 'https://fabrik-back.herokuapp.com/threeFile/upload',
         data: form,
         headers: {
           "Content-Type": `multipart/form-data`,

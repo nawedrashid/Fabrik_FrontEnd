@@ -21,7 +21,7 @@ const GLBDataContext = ({ children }) => {
 
   useEffect(() => {
     const getGLBData = async () => {
-      const GLBResponse = await axios.get("http://localhost:5000/threeFile");
+      const GLBResponse = await axios.get("https://fabrik-back.herokuapp.com/threeFile");
       if (GLBResponse) {
         setGLBData(GLBResponse.data.getGLBData);
         setCount(count+1)
