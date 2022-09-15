@@ -14,7 +14,6 @@ const Home = () => {
 
   const { GLBData, setCount,count } = useContext(DataContext) 
 
-  // console.log(GLBData[0]._id)
   const changeHandler = (e) => {
     setFileName(e.target.files[0].name)
     setGLBFile(e.target.files[0])

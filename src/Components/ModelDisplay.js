@@ -7,10 +7,8 @@ const ModelDisplay = () => {
 
   const { GLBData } = useContext(DataContext) 
   const { id } = useParams()
-  console.log(id)
   const Model = GLBData.filter((mod)=>mod._id === id);
   const modelPath = Model[0].file3d
-  console.log(modelPath)
   return (
     <div style={{height:"100vh"}}>
       <ModelViewer scale="10" modelPath={modelPath} />
